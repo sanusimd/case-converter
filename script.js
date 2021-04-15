@@ -1,0 +1,5 @@
+const inputText = document.querySelector('.convertForm')
+const upperCase = document.querySelector('.upperBtn')
+const lowerCase = document.querySelector('.lowerBtn')
+const sentenceCase = document.querySelector('.sentenceBtn')
+const inputText = document.querySelector('.clearBtn')
