@@ -124,10 +124,10 @@ main .btn-container{
 main .btn-container .btn{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    margin: 20px;
+    margin: 15px;
     background-color: var(--blue);
     color: var(--white);
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     /* font-weight: bold; */
   
