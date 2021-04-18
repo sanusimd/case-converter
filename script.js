@@ -3,7 +3,7 @@ const inputText = document.querySelector("#convertForm");
 const upperCase = document.querySelector(".upperBtn");
 const lowerCase = document.querySelector(".lowerBtn");
 const sentenceCase = document.querySelector(".sentenceBtn");
-const copyButton = document.querySelector(".titleBtn");
+const titleButton = document.querySelector(".titleBtn");
 const copyButton = document.querySelector(".copyBtn");
 const clearButton = document.querySelector(".clearBtn");
 
