@@ -24,17 +24,19 @@ lowerCase.addEventListener("click", function () {
 // Sentence Case Event Listener
 sentenceCase.addEventListener("click", function () {
   const inputValue = inputText.value;
-  let senCase = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
-  document.querySelector("#convertForm").value = senCase;
-  console.log('sentence case');
+  const toSmallCase = inputValue.toLowerCase();
+  const senCase = toSmallCase.charAt(0).toUpperCase();
+  const newSenCase = senCase + toSmallCase.slice(1);
+  document.querySelector("#convertForm").value = newSenCase;
 });
 
+// Title Case Functionality 
 
 
 // Functionality Added for select and copy button Event listener
 copyButton.addEventListener("click", function () {
   inputText.select();
-  inputText.setSelectionRange(0, 99999)
+  inputText.setSelectionRange(0, 99999);
   document.execCommand("copy");
 });
 
