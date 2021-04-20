@@ -21,6 +21,7 @@ lowerCase.addEventListener("click", function () {
   document.querySelector("#convertForm").value = caseLower;
 });
 
+
 // Sentence Case Event Listener
 sentenceCase.addEventListener("click", function () {
   const inputValue = inputText.value;
@@ -30,8 +31,19 @@ sentenceCase.addEventListener("click", function () {
   document.querySelector("#convertForm").value = newSenCase;
 });
 
-// Title Case Functionality 
 
+// Title Case Functionality Event listener
+titleButton.addEventListener("click", function () {
+  const inputValue = inputText.value;
+  const strToLowerCase = inputValue.toLowerCase();
+
+  function capitalize(strToLowerCase) {
+    return strToLowerCase.charAt(0).toUpperCase() + strToLowerCase.slice(1);
+  }
+  
+  const caps = strToLowerCase.split(" ").map(capitalize).join(" ");
+  document.querySelector("#convertForm").value = caps;
+});
 
 // Functionality Added for select and copy button Event listener
 copyButton.addEventListener("click", function () {
