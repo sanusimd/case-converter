@@ -2,61 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,900&family=Roboto:wght@100;400;700;900&display=swap');
 
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family:  'Roboto', sans-serif;
-   
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
 
 /* Defined Variable */
-
 :root {
     --blue: #1135e9;
     --blueLight: #7383d1;
@@ -67,16 +20,22 @@ table {
 /* Main Css */
 
 #main-container{
-    width: 1366px;
-    margin: auto;
-    
+    /* width: 1366px; */
+    /* margin: auto; */
+    background-color: azure;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     
 }
 
 /* Header Css */
 header{
+/* display: flex;
+justify-content: center;
+align-items: center; */
     text-align: center;
-    padding: 100px 0 20px 0;
+    padding: 50px 0 20px 0;
 }
 
 header h1{
@@ -103,35 +62,54 @@ header p{
 main{
     text-align: center;
     margin-bottom: 30px;
+    
+
 }
 
 main textarea{
- width: 900px;
- height:300px ;
+ width: 70%;
+ height:200px ;
  border-radius: 10px;
- margin-bottom: 20px;
+ margin-bottom: 5px;
  border: solid 1px var(--blue);
  outline: none;
  font-size: 24px;
+ padding: 3px;
 }
+
+main textarea:placeholder-shown {
+    font-style: italic;
+  }
 
 
 
 main .btn-container{
-    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    
+    /* flex-direction: column; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    
 }
 
 main .btn-container .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    margin: 15px;
+    /* margin: 10px; */
     background-color: var(--blue);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 5px 5px;
     border-radius: 5px;
     /* font-weight: bold; */
-  
-   
+    /* width: 10%; */
 }
 
 main .btn-container .upperBtn{
@@ -149,3 +127,13 @@ footer{
 
 }
 
+
+
+/* Media Queries Section 
+Responsive layout - when the screen is less than 600px wide
+*/
+/* @media screen and (max-width: 600px) {
+    main textarea{
+        width: 50%;
+    }
+  } */
