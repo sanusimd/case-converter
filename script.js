@@ -54,5 +54,5 @@ copyButton.addEventListener("click", function () {
 
 // Clear button Event listener
 clearButton.addEventListener("click", function () {
-  inputText.value = " Type or Paste Your Text Here To Convert Case... ";
+  inputText.value = " ";
 });
